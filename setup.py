@@ -6,7 +6,7 @@ README = open('README.md').readlines()
 
 setup(
     name='django-msgpackfield',
-    version='0.1',
+    version='0.14',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
@@ -17,8 +17,7 @@ setup(
     author_email='vakorol@mail.ru',
     install_requires=(
         'django',
-        'msgpack',
-        'json',
+        'msgpack-python',
     ),
     classifiers=[
         'Framework :: Django',
