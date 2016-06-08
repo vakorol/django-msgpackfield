@@ -10,7 +10,8 @@ input in JSON. This data is then converted to MsgPack when the form is submitted
 Installation
 ------------
 
-Install it with pip (or easy_install)::
+Install it with pip (or easy_install) :
+
     pip3 install django-msgpackfield
 
 Usage
