@@ -7,6 +7,13 @@ of native Python structures into/from [MsgPack](http://msgpack.org) format.
 It also comes with a form widget, basically a `<TEXTAREA>` where data can be
 input in JSON. This data is then converted to MsgPack when the form is submitted.
 
+Requirements
+------------
+
+* Python3
+* Django 1.8+
+* Depends on package `msgpack`
+
 Installation
 ------------
 
