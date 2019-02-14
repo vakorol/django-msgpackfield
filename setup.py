@@ -6,7 +6,7 @@ README = open('README.md').readlines()
 
 setup(
     name='django-msgpackfield',
-    version='0.14',
+    version='0.15',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
@@ -21,7 +21,7 @@ setup(
     ),
     classifiers=[
         'Framework :: Django',
-        'Framework :: Django :: 1.8',
+        'Framework :: Django :: 2.0',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
