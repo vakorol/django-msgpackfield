@@ -72,7 +72,7 @@ class JsonTextWidget ( Textarea ) :
 
 
 ############################################################################
-#   @brief  A Django model field for storing data in MsgPack format in the 
+#   @brief  A Django model field for storing data in MsgPack format in the
 #   database.
 #
 #   This model field does automatic serialization/deserialization of data
@@ -131,7 +131,10 @@ class MsgPackField ( models.Field ) :
     ######################################################################
     ######################################################################
     def value_to_string ( self, obj ) :
-        value = self._get_val_from_obj( obj )
+        if hasattr(self, '_get_val_from_obj'):
+            value = self._get_val_from_obj(obj)
+        else:
+            value = super( MsgPackField, self ).value_from_object(obj)
         return json.dumps( value, indent="\t", separators=(', ', ': ') )
 
 
