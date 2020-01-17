@@ -53,7 +53,7 @@ class JsonTextWidget ( Textarea ) :
     #
     #   The displayed data is formatted to prettified JSON.
     ######################################################################
-    def render ( self, name, value, attrs=None ) :
+    def render ( self, name, value, attrs=None, renderer=None ) :
         value = json.dumps( value, indent="\t", separators=(', ', ': ') )
         return super( JsonTextWidget, self ).render( name, value, attrs )
 
@@ -118,7 +118,7 @@ class MsgPackField ( models.Field ) :
     #   @brief  Overload of parent method to decode data into Python native
     #   structure upon retrieval from the database.
     ######################################################################
-    def from_db_value ( self, value, expression, connection, context ) :
+    def from_db_value ( self, value, expression, connection, context=None ) :
         return self.to_python( value )
 
 
