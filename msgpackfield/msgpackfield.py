@@ -144,7 +144,7 @@ class MsgPackField ( models.Field ) :
 
     ######################################################################
     def formfield ( self, **kwargs ):
-        defaults = { 'widget': JsonTextWidget }
+        defaults = { 'widget': JsonTextWidget, 'help_text': self.help_text }
         defaults.update( kwargs )
         return CharField( **defaults )
 
