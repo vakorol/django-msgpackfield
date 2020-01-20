@@ -16,8 +16,8 @@ setup(
     author='Vasili Korol',
     author_email='vakorol@mail.ru',
     install_requires=(
-        'django',
-        'msgpack-python',
+        'django>=1.8',
+        'msgpack-python>=0.5',
     ),
     classifiers=[
         'Framework :: Django',

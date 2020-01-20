@@ -10,14 +10,14 @@ input in JSON. This data is then converted to MsgPack when the form is submitted
 Requirements
 ------------
 
-* Python3
-* Django 1.8+
-* Depends on package `msgpack`
+* Python 3.4+
+* Django 1.8+ (tested with 1.8-3.0)
+* [msgpack-python](https://github.com/msgpack/msgpack-python)
 
 Installation
 ------------
 
-Install it with pip (or easy_install) :
+Install it with `pip` (or `easy_install`) :
 
     pip3 install django-msgpackfield
 
